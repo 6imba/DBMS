@@ -1,0 +1,72 @@
+https://www.edureka.co/blog/sql-decode/#DECODEfunction
+
+#DATABASE
+CREATE DATABASE databasename;                         //SQL statement to create a new database called #.
+SHOW DATABASES;                                       //check created  database in the list of databases
+DROP DATABASE databasename;                           //SQL statement to delete a database named #.
+BACKUP DATABASE databasaename			      //SQL statement used in SQL ServeR to create a full back up of an existing SQL database.
+TO DISK = 'filepatha';
+//E.G.
+BACKUP DATABASE testDB
+TO DISK = 'D:\backups\testDB.bak';
+//Differential backup vs. incremental backup
+
+
+
+oracle and sql difference??
+
+https://www.oracletutorial.com/oracle-comparison-functions/oracle-nvl2/
+
+
+
+!= or <> ==> not equal to
+and
+or
+'string'
+SELECT * FROM `member` order by id desc
+SELECT * FROM `member` order by name asc
+0=>value / null=> empty
+'varchar'
+insert into member (name,adress,contact,salary) values ('rima',kapan-6,12345,10000000)
+update member set name='Aliyana Grurung' where name='Alinia Gurung'
+delete name from
+select * from member limit 3
+select * from member  order by id desc limit 3  
+select min(salary) from member
+select count(id) from member
+select avg(salary) from member
+select sum(salary) from member
+SELECT * FROM `member` WHERE name like 'a%' ==> search
+
+create database storebase2
+create table student
+(
+    id int AUTO_INCREMENT,......PRIMARY KEY
+    ......PRIMARY KEY(student table ko harek individual row lai uniquely locate garxa (unique id))
+    name varchar(20),
+    age int,
+    address varchar(30),
+    PRIMARY KEY(id)......(id lai PRIMARY KEY declear gareko)
+);
+
+SELECT * FROM `student` WHERE age is null //is not
+
+
+FOEIGN KEY
+create table phone
+(
+    pid int AUTO_INCREMENT,......FOREIGN KEY(phone table ko harek individual row lai uniquely locate garxa (unique pid))
+    number int (20),
+    id int,.......FOREIGN KEY (student table ko id ko reference le ko phone table ko lagi matlab student table ko id j xa phone table ko id ni tei hunxa. Yata student table of auta id vako manxe ko ak vanda badi mobile number huna sakxa tesaile id="x" ko 3 ota mobile number xa vane harek mobile number lai unique id dinu per xa i.e : id="x" ==> one_individual and pid="1" pid="2" pid="3" ==> numbers that id="x" carry )
+    PRIMARY KEY(pid),
+    FOREIGN KEY(id) REFERENCES student(id)......(id lai FOREIGN KEY declear gareko)
+);
+
+yata pid vaneko id bhitra ko unique id ho.
+
+SELECT id FROM student WHERE name = 'Arjen Robben';
+it will gie id=1 as output
+SELECT number FROM `phone` WHERE id=1
+
+
+how to update number int(20) to number varchar(20)??????

@@ -1,0 +1,59 @@
+# Types of Databsae:
+	> On the basis of database structure:
+		1. Single-file or flat file database,
+		2. Multi-file relational or structured database.
+
+	> On the basis of _ :
+		1. Relational database,
+		2. Object oriented database,
+		3. Hierarchical database,
+		4. Network database.
+
+	> On the basis of _ :
+		1. Relational databases,
+		2. Cloud databases,
+		3. Columnar databases.
+		4. Object-oriented databases,
+		5. Hierarchical databases,
+		6. Network database.
+		7. Centralized database,
+		8. Distributed database.
+		9. Time series databases,
+		10. Commercial database,
+		11. End-user database,
+ 		12. Open-source database,
+		13. Operational database,
+		14. Personal database,
+		15. NoSQL or non-relational databases:
+			16. Document databases,
+			17. Key-value databases,
+			18. Wide column databases,
+			19. Graph databases,
+
+	> On the basis of _ :
+		1. Centralized database,
+		2. Distributed database.
+
+	> On the basis of where its hosted:
+		1. Cloud,
+		2. Self-Hosted.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Popular Relational/SQL Database Management Systems: (DBMS: Oracle, Moicrosoft SQL Server, MySQL, PostgreSQL, IBM DB2, Microsoft Access, SQLite, MariaDB)
+
+# Sub-Types of Non-Relational/NoSQL Databases:
+	1. Document-oriented databases: (DBMS: MongoDB, DynamoDB and CosmosDB)
+	2. Key-Value Stores: (DBMS: Redis, AWS DynamoDB)
+	3. Wide-Column Stores,
+	4. Graph Stores.
+
+# NoSQL DB on the basis of where its hosted:
+	1. Cloud: (DBMS ==> AWS DynamoDB, Goggle Cloud BigTable, Azure CosmosDB)
+	2. Self-Hosted: (DBMS ==> MongoDB, cassandra, SCYLA, CouchDB)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# I am Learning: NoSQL, Document-oriented NoSQL Databases called MongoDB.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+https://www.matillion.com/resources/blog/the-types-of-databases-with-examples

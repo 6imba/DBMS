@@ -1,0 +1,42 @@
+# Three schema architecture. # Data Independence.
+# SQL(DDL) is used to implement Schema architecture.
+# Table-Logical-Schema + Their-Relation == Database-Logical-Schema.
+
+Q. What is Schema in the Database Management System?
+	- A schema can be defined as the structured design or blueprint of a database.
+	- The overall description of the database is called the database schema.
+
+# It can be categorized into three parts:
+	- Physical/Internal Schema: Database-Administrator
+	- Logical/Conceptual Schema: Programmer(BackEnd-Developer)| Database-Designer
+	- View/External Schema: FrontEnd-Developer|User
+
+	> Physical Schema: A physical schema can be defined as the design of a database at its physical level. In this level, it is expressed how data is stored in blocks of storage(eg: file structure).
+	> Logical Schema: A logical schema can be defined as the design of the database at its logical level. In this level, the programmers, as well as the database administrator (DBA), work.
+	    		  At this level, data can be described as certain types of data records that can be stored in the form of data structures.
+			  However, the internal details (such as an implementation of data structure) will be remaining hidden at this level.
+			  For Example: ERM
+	> View Schema: View schema can be defined as the design of the database at the view level, which generally describes end-user interaction with database systems.
+
+# Three schema architecture.
+	View Schema (authorized view with particular data)
+	     |
+	Logical Schema (data represent in tabular formate)
+	     |
+	    DBMS
+	     |
+	Physical Schema
+	     |
+	Database Harddisk Storage(data store in file formate)
+
+# Actual Data structure.
+	Logical Schema
+	     |
+	Physical Schema
+	     |
+	Database(Centralize/Distributed)
+
+# Reference:
+	- https://www.w3schools.in/dbms/data-schemas/#:~:text=View%20schema%20can%20be%20defined,information%20on%20a%20student's%20table.
+	- https://www.youtube.com/watch?v=vuXnRRG-m5M
+	- https://www.youtube.com/watch?v=5fs1ldO6B5c

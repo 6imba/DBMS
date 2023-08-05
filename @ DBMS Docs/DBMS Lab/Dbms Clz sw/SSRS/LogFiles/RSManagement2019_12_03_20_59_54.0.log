@@ -1,0 +1,28 @@
+2019-12-03 20:57:17.0171|INFO|1|File Logger created: 'C:\Users\simba\Desktop\BiT\Software\SSRS\LogFiles\RSManagement_${DailyDate}.log' - level Info, will roll at 32 Mb, process id 5144
+2019-12-03 20:57:17.7359|INFO|1|CFG : Dumper.path = [..\LogFiles\] (env)
+2019-12-03 20:57:17.7359|INFO|1|CFG : Name = [] (env)
+2019-12-03 20:57:17.7359|INFO|1|CFG : Dumper.flags = [SendToWatson, AllThreads, AllMemory] (env)
+2019-12-03 20:57:17.7359|INFO|1|CFG : Dumper.preventIfContains = [Microsoft.BIServer.HostingEnvironment.Exceptions.TrustedProcessTokenExpiredException] (env)
+2019-12-03 20:57:17.7671|INFO|1|Do not dump on: Microsoft.BIServer.HostingEnvironment.Exceptions.TrustedProcessTokenExpiredException
+2019-12-03 20:57:17.7671|INFO|1|CFG : listenerUrl = [http://+:8082/] (env)
+2019-12-03 20:57:17.7984|INFO|1|CFG : rsConfigFilePath = [..\ReportServer\rsreportserver.config] (env)
+2019-12-03 20:57:17.8609|INFO|1|SKU: SQL Server Evaluation
+2019-12-03 20:57:19.3453|INFO|1|The web server needs to run elevated
+2019-12-03 20:57:19.3453|INFO|1|Web Server is running.
+2019-12-03 20:57:22.6578|ERROR|6|FailedToDecryptConfigInformation: Dsn| RequestID = s_681680fd-660a-4603-b02b-c9811ddbe1fc 
+2019-12-03 20:57:23.7671|ERROR|6|FailedToDecryptConfigInformation: Dsn| RequestID = s_d35da74d-6804-4682-954d-6faac5b3891c 
+2019-12-03 20:57:33.8141|ERROR|8|FailedToDecryptConfigInformation: Dsn| RequestID = s_eb7cc3da-a3d1-4a52-bbb0-c20773c3cbad 
+2019-12-03 20:57:43.8453|ERROR|8|FailedToDecryptConfigInformation: Dsn| RequestID = s_81104f93-d075-40e7-8cfd-f6a235e3e3bb 
+2019-12-03 20:57:53.8610|ERROR|7|FailedToDecryptConfigInformation: Dsn| RequestID = s_c176826e-905e-479c-9f71-d36daf77a008 
+2019-12-03 20:58:03.8766|ERROR|7|FailedToDecryptConfigInformation: Dsn| RequestID = s_b372a320-090e-489b-8642-eaf01ee79fa9 
+2019-12-03 20:58:13.8923|ERROR|9|FailedToDecryptConfigInformation: Dsn| RequestID = s_f4c33cc2-f94a-4146-89f6-1714651e281f 
+2019-12-03 20:58:23.9079|ERROR|9|FailedToDecryptConfigInformation: Dsn| RequestID = s_889d9231-1a09-478e-87a8-d6713afe3d2b 
+2019-12-03 20:58:33.9392|ERROR|10|FailedToDecryptConfigInformation: Dsn| RequestID = s_66473111-ab70-44ee-8bbe-9b7bcb65f422 
+2019-12-03 20:58:43.9549|ERROR|10|FailedToDecryptConfigInformation: Dsn| RequestID = s_08ecaa2d-ce7d-48e5-b643-5e665bfbe16d 
+2019-12-03 20:58:53.9705|ERROR|11|FailedToDecryptConfigInformation: Dsn| RequestID = s_23b8fc19-58cd-4b80-b1a6-8e650524465f 
+2019-12-03 20:59:03.9862|ERROR|11|FailedToDecryptConfigInformation: Dsn| RequestID = s_7bede813-a32d-4fea-be58-caf9ea71b514 
+2019-12-03 20:59:14.0175|ERROR|11|FailedToDecryptConfigInformation: Dsn| RequestID = s_ce17f8e6-a0e4-44dc-9dbe-82079fe26ac5 
+2019-12-03 20:59:24.0487|ERROR|11|FailedToDecryptConfigInformation: Dsn| RequestID = s_570415c1-f4d8-4485-bbd5-d32a89577140 
+2019-12-03 20:59:34.1269|ERROR|12|FailedToDecryptConfigInformation: Dsn| RequestID = s_137f49ab-f7a2-4059-97cf-043f41251b8a 
+2019-12-03 20:59:44.1415|ERROR|12|FailedToDecryptConfigInformation: Dsn| RequestID = s_325a5d0e-a6b5-4c06-bca2-343539a85305 
+2019-12-03 20:59:54.1709|ERROR|12|FailedToDecryptConfigInformation: Dsn| RequestID = s_47b9572d-a4e3-4b42-ac9f-9d9f15bd736a 

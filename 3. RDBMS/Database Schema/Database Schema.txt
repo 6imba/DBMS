@@ -1,0 +1,54 @@
+- Scheme: > a systematic and organized configuration/plan/program to achieve some action.
+- Scheme Synonym: plan, project, plan of action, programme, strategy, stratagem, game plan. enterprise, venture, measure, move, course of action, line of action. system, procedure, design, formula, recipe. device, tactic, contrivance. proposal, proposition, suggestion, idea, blueprint, structured framework
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Database Schema:
+	- A schema is a collection of database objects.
+	- The term "schema" refers to the organization of data as a blueprint of how the database is constructed (divided into database tables in the case of relational databases).
+	- The formal definition of a database schema is a set of formulas (sentences) called integrity constraints imposed on a database.
+
+	- A database schema is a structure that represents the logical storage of the data in a database.
+
+	- A database schema is the skeleton structure that represents the logical view of the entire database. It defines how the data is organized and how the relations among them are associated. It formulates all the constraints that are to be applied on the data.
+	- A database schema defines its entities and the relationship among them.
+	- It contains a descriptive detail of the database, which can be depicted by means of schema diagrams.
+		- depict: represent by a drawing, painting, or other art form.
+	- It’s the database designers who design the schema to help programmers understand the database and make it useful.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Database Object:
+	- The six database objects: Tables, Constraints, Indexes, Triggers, Sequences, Views, Usage lists.
+	- A database object is any defined object in a database that is used to store or reference data,
+	- Anything which we make from create command is known as Database Object,
+	- It can be used to hold and manipulate the data.
+    # A database schema describes the structure, organization and relation of data(database-object) in a database system.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Types of Schema: 
+	- Schema is of three types: Logical Schema, Physical Schema and view Schema.
+		- Logical Schema – It describes the database designed at logical level.
+		- Physical Schema – It describes the database designed at physical level.
+		- View Schema – It defines the design of the database at the view level.
+
+	- Various tools are used to create a logical database schema, and these tools demonstrate the relationships between the component of your data; this process is called ER modelling.
+	- https://www.javatpoint.com/database-schema
+
+# Database schema vs table.
+	schema -> floor plan
+	database -> house
+	table -> room
+
+	- A database schema is the collection of relation schemas for a whole database.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Database Schema and Relation Shema:
+	- A relation schema is the logical definition of a table - it defines what the name of the table is, and what the name and type of each column is. It's like a plan or a blueprint.
+	- A database schema is the collection of relation schemas for a whole database.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- A table is a structure with a bunch of rows (aka "tuples"), each of which has the attributes defined by the schema. Tables might also have indexes on them to aid in looking up values on certain columns.
+- A database is, formally, any collection of data. In this context, the database would be a collection of tables. A DBMS (Database Management System) is the software (like MySQL, SQL Server, Oracle, etc) that manages and runs a database.
+
+- schema : database : table :: floor plan : house : room
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Database Schema vs Data Moldel Diagram?

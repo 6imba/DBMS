@@ -1,0 +1,366 @@
+#pragma autorecover
+#pragma namespace ("\\\\.\\Root")
+
+instance of __Namespace 
+{
+    Name = "Microsoft";
+};
+
+#pragma namespace ("\\\\.\\Root\\Microsoft")
+instance of __Namespace 
+{
+    Name = "SqlServer";
+};
+
+#pragma namespace ("\\\\.\\root\\Microsoft\\SqlServer")
+instance of __Namespace 
+{
+    Name = "ReportServer";
+};
+
+#pragma namespace ("\\\\.\\root\\Microsoft\\SqlServer\\ReportServer")
+
+instance of __Namespace 
+{ 
+        Name = "RS_SSRS";
+};
+
+#pragma namespace ("\\\\.\\root\\Microsoft\\SqlServer\\ReportServer\\RS_SSRS")
+
+instance of __Namespace 
+{
+    Name = "V14";
+};
+
+#pragma namespace ("\\\\.\\root\\Microsoft\\SqlServer\\ReportServer\\RS_SSRS\\V14")
+
+//*************************************************************
+//***   Namespace: V14                                       ***
+//*************************************************************
+instance of __Win32Provider as $P
+{
+    Name = "ReportingServicesWMIProvider";
+    ClsId = "{3B34A0B1-42A9-448B-9043-0817D8A82926}";
+    HostingModel = "LocalSystemHostOrSelfHost";
+};
+
+instance of __InstanceProviderRegistration
+{
+    Provider = $P;
+    SupportsGet = TRUE;
+    SupportsPut = FALSE;
+    SupportsDelete = FALSE;
+    SupportsEnumeration = TRUE;
+    QuerySupportLevels = {"WQL:UnarySelect"};
+};
+
+instance of __MethodProviderRegistration
+{
+    Provider = $P;
+};
+
+//**************************************************************************
+//* Class: MSReportServer_Instance (lives in V14)
+//**************************************************************************
+[dynamic: ToInstance, provider("ReportingServicesWMIProvider")]
+class MSReportServer_Instance
+{
+    [read] string InstanceID;
+    [key, read] string InstanceName;
+    [read] uint32 EditionID;
+    [read] string EditionName;
+    [read] boolean IsSharePointIntegrated;
+    [read] string Version;
+
+    [implemented] void GetReportServerUrls(
+        [out]    string ApplicationName[],
+        [out]    string URLs[],
+        [out]    sint32 Length,
+        [out]    sint32 HRESULT);
+};
+
+instance of __Namespace 
+{
+    Name = "Admin";
+};
+
+#pragma namespace ("\\\\.\\root\\Microsoft\\SqlServer\\ReportServer\\RS_SSRS\\V14\\admin")
+
+//*************************************************************
+//***   Namespace: Admin                                       ***
+//*************************************************************
+instance of __Win32Provider as $Q
+{
+    Name = "ReportingServicesWMIProvider";
+    ClsId = "{3B34A0B1-42A9-448B-9043-0817D8A82926}";
+    HostingModel = "LocalSystemHostOrSelfHost";
+};
+
+instance of __InstanceProviderRegistration
+{
+    Provider = $Q;
+    SupportsGet = TRUE;
+    SupportsPut = TRUE;
+    SupportsDelete = FALSE;
+    SupportsEnumeration = TRUE;
+    QuerySupportLevels = {"WQL:UnarySelect"};
+};
+
+instance of __MethodProviderRegistration
+{
+    Provider = $Q;
+};
+
+//**************************************************************************
+//* Class: MSReportServer_ConfigurationSetting (lives in Admin)
+//**************************************************************************
+[dynamic: ToInstance, provider("ReportingServicesWMIProvider")]
+class MSReportServer_ConfigurationSetting
+{
+    [read] sint32 ConnectionPoolSize;
+    [read] string DatabaseLogonAccount;
+    [read] sint32 DatabaseLogonTimeout;
+    [read] sint32 DatabaseLogonType;    
+    [read] string DatabaseName;
+    [read] sint32 DatabaseQueryTimeout;
+    [read] string DatabaseServerName;
+    [key, read] string InstanceName;
+    [read] string InstallationID;
+    [read] boolean IsInitialized;
+    [read] boolean IsWindowsServiceEnabled;
+    [read] boolean IsWebServiceEnabled;
+    [read] boolean IsReportManagerEnabled;
+    [read] string MachineAccountIdentity;
+    [read] string PathName;
+    [read] sint32 SecureConnectionLevel;
+    [read] boolean IsPowerBIFeatureEnabled;
+    [read] string SenderEmailAddress;
+    [read] string ServiceName;
+    [read] boolean SendUsingSMTPServer;
+    [read] string SMTPServer;
+    [read] string SendUserName;
+    [read] sint32 SMTPAuthenticate;
+    [read] boolean SMTPUseSSL;
+    [read] string UnattendedExecutionAccount;
+    [read] string FileShareAccount;
+    [read] string WindowsServiceIdentityActual;
+    [read] string WindowsServiceIdentityConfigured;
+    [read] boolean IsSharePointIntegrated;
+    [read] string Version;
+    [read] string VirtualDirectoryReportServer;
+    [read] string VirtualDirectoryReportManager;
+    [read] string ExtendedProtectionLevel;
+    [read] string ExtendedProtectionScenario;
+ 
+    [implemented] void InitializeReportServer(
+        [in]    string InstallationID, 
+        [out]   sint32 HRESULT,
+        [out]   string ExtendedErrors[]);
+    [implemented] void SavePowerBIInformation(
+        [in]    string ClientId,
+        [in]    string ClientSecret,
+        [in]    string AppObjectId,
+        [in]    string TenantName,
+        [in]    string TenantId,
+        [in]    string ResourceUrl,
+        [in]    string AuthUrl,
+        [in]    string TokenUrl,
+        [in]    string RedirectUrls,
+        [out]   sint32 HRESULT);
+    [implemented] void GetPowerBIInformation(
+        [out]    string ClientId,
+        [out]    string AppObjectId,
+        [out]    string TenantName,
+        [out]    string TenantId,
+        [out]    string ResourceUrl,
+        [out]    string AuthUrl,
+        [out]    string TokenUrl,
+        [out]    string RedirectUrls,
+        [out]   sint32 HRESULT);
+    [implemented] void UpdatePowerBIInformation(
+        [in]    string RedirectUrls,
+        [out]   sint32 HRESULT);
+    [implemented] void DeletePowerBIInformation(
+        [out]   sint32 HRESULT);
+    [implemented] void GetUrlRootAndHostname(
+        [out]    string UrlRoot,
+        [out]    string Hostname,
+        [out]    sint32 HRESULT);
+    [implemented] void SetUnattendedExecutionAccount(
+        [in]    string UserName,
+        [in]    string Password,
+        [out]   sint32 HRESULT);
+    [implemented] void RemoveUnattendedExecutionAccount(
+        [out]   sint32 HRESULT);
+    [implemented] void SetFileShareAccount(
+        [in]    string Account,
+        [in]    string Password,
+        [out]   sint32 HRESULT);
+    [implemented] void RemoveFileShareAccount(
+        [out]   sint32 HRESULT);
+    [implemented] sint32 SetDatabaseConnection(
+        [in]    string Server, 
+        [in]    string DatabaseName, 
+        [in]    sint32 CredentialsType, 
+        [in]    string UserName,
+        [in]    string Password,
+        [out]   sint32 HRESULT);
+    [implemented] void SetEmailConfiguration(
+        [in]    boolean SendUsingSmtpServer,
+        [in]    string SmtpServer,
+        [in]    string SenderEmailAddress,
+        [out]   sint32 HRESULT);
+    [implemented] void SetAuthenticatedEmailConfiguration(
+        [in]    boolean SendUsingSmtpServer,
+        [in]    string SmtpServer,
+        [in]    string SenderEmailAddress,
+        [in]    string SendUserName,
+        [in]    string SendPassword,
+        [in]    sint32 SMTPAuthenticate,
+        [in]    boolean SMTPUseSSL,
+        [out]   sint32 HRESULT);
+    [implemented] sint32 SetWindowsServiceIdentity(
+        [in]    boolean UseBuiltInAccount,
+        [in]    string Account,
+        [in]    string Password,
+        [out]   sint32 HRESULT);
+    [implemented] void GenerateDatabaseCreationScript(
+        [in]    string DatabaseName, 
+        [in]    sint32 Lcid,
+        [in]    boolean IsSharePointMode, 
+        [out]   string Script,  
+        [out]   sint32 HRESULT);
+    [implemented] void GenerateDatabaseRightsScript(
+        [in]    string UserName,
+        [in]	string DatabaseName, 
+        [in]	boolean IsRemote,
+        [in]    boolean IsWindowsUser, 
+        [out]   string Script,  
+        [out]   sint32 HRESULT);
+    [implemented] void GenerateDatabaseUpgradeScript(
+        [in]    string DatabaseName, 
+        [in]    string ServerVersion, 
+        [out]   string Script,  
+        [out]   sint32 HRESULT);
+    [implemented] void BackupEncryptionKey(
+        [in]    string Password, 
+        [out]   uint8 KeyFile[],    
+        [out]   sint32 Length,
+        [out]   sint32 HRESULT,
+        [out]   string ExtendedErrors[]);
+    [implemented] void RestoreEncryptionKey(
+        [in]    uint8 KeyFile[], 
+        [in]    sint32 Length,  
+        [in]    string Password,
+        [out]   sint32 HRESULT,
+        [out]   string ExtendedErrors[]);
+    [implemented] void SetSecureConnectionLevel(
+        [in]    sint32 Level,   
+        [out]   sint32 HRESULT);
+    [implemented] void DeleteEncryptedInformation(
+        [out]   sint32 HRESULT,
+        [out]   string ExtendedErrors[]);
+    [implemented] void DeleteEncryptionKey(
+        [in]    string InstallationID, 
+        [out]   sint32 HRESULT,
+        [out]   string ExtendedErrors[]);
+    [implemented] void ListReportServersInDatabase(
+        [out]   string MachineNames[],
+        [out]   string InstanceNames[],
+        [out]   string InstallationIDs[],
+        [out]   boolean IsInitialized[],
+        [out]   sint32 Length,      
+        [out]   sint32 HRESULT,
+        [out]   string ExtendedErrors[]);
+    [implemented] void ReencryptSecureInformation(
+        [out]   sint32 HRESULT,
+        [out]   string ExtendedErrors[]);
+    [implemented] void SetDatabaseLogonTimeout(
+        [in]    sint32 LogonTimeout, 
+        [out]   sint32 HRESULT);
+    [implemented] void SetDatabaseQueryTimeout(
+        [in]    sint32 QueryTimeout, 
+        [out]   sint32 HRESULT);
+    [implemented] void SetServiceState(
+        [in]    boolean EnableWindowsService, 
+        [in]    boolean EnableWebService, 
+        [in]    boolean EnableReportManager,
+        [out]   sint32 HRESULT);
+    [implemented] void ListInstalledSharePointVersions(
+        [out]   string VersionTokens[],
+        [out]   sint32 Length,
+        [out]   sint32 HRESULT);
+    [implemented] void GetDatabaseVersionDisplayName(
+        [in]    string Version,
+        [out]   string DisplayName,
+        [out]   sint32 HRESULT);    
+    [implemented] void GetAdminSiteUrl(
+        [out]   string AdminSiteUrl,
+        [out]   sint32 HRESULT);    
+    [implemented] void ListReservedUrls(
+        [out]   string Application[],
+        [out]   string UrlString[],
+        [out]   string Account[],
+        [out]   string AccountSID[],
+        [out]   sint32 Length,
+        [out]   sint32 HRESULT);
+    [implemented] void SetVirtualDirectory(
+        [in]    string Application,
+        [in]    string VirtualDirectory,
+        [in]    sint32 Lcid,
+        [out]   string Error,
+        [out]   sint32 HRESULT);
+    [implemented] void ReserveURL(
+        [in]    string Application,
+        [in]    string UrlString,
+        [in]    sint32 Lcid,
+        [out]   string Error,
+        [out]   sint32 HRESULT);
+    [implemented] void RemoveURL(
+        [in]    string Application,
+        [in]    string UrlString,
+        [in]    sint32 Lcid,
+        [out]   string Error,
+        [out]   sint32 HRESULT);
+    [implemented] void ListSSLCertificates(
+        [out]   string CertificateHash[],
+        [out]   string CertName[],
+        [out]   string Hostname[],
+        [out]   sint32 Length,
+        [out]   sint32 HRESULT);
+    [implemented] void ListIPAddresses(
+        [out]   string IPAddress[],
+        [out]   string IPVersion[],
+        [out]   boolean IsDhcpEnabled[],
+        [out]   sint32 Length,
+        [out]   sint32 HRESULT);
+    [implemented] void ListSSLCertificateBindings(
+        [in]    sint32 Lcid,
+        [out]   string Application[],
+        [out]   string CertificateHash[],
+        [out]   string IPAddress[],
+        [out]   sint32 Port[],
+        [out]   string Errors[],
+        [out]   sint32 Length,
+        [out]   sint32 HRESULT);
+     [implemented] void CreateSSLCertificateBinding(
+        [in]    string Application,
+        [in]    string CertificateHash,
+        [in]    string IPAddress,
+        [in]    sint32 Port,
+        [in]    sint32 Lcid,
+        [out]   string Error,
+        [out]   sint32 HRESULT);
+     [implemented] void RemoveSSLCertificateBindings(
+        [in]    string Application,
+        [in]    string CertificateHash,
+        [in]    string IPAddress,
+        [in]    sint32 Port,
+        [in]    sint32 Lcid,
+        [out]   string Error,
+        [out]   sint32 HRESULT);
+    [implemented] void SetExtendedProtectionSettings(
+        [in]    string ExtendedProtectionLevel,
+        [in]    string ExtendedProtectionScenario,
+        [out]   sint32 HRESULT);
+};

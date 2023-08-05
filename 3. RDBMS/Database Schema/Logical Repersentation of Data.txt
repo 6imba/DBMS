@@ -1,0 +1,5 @@
+- In RDBMS data is logically represent in the form of table.
+- In ERD data is logically represent in the form of entities and relationship.
+
+# Reference: 
+	- https://www.youtube.com/watch?v=pDX4NR4eY3A

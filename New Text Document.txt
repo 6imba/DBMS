@@ -1,0 +1,6 @@
+# Scale-In & Scale-Out.
+# Horizontal_Scale-In & Horizontal_Scale-Out. <----->
+# Vertical_Scale-In & Vertical_Scale-Out. |
+
+
+

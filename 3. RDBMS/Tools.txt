@@ -1,0 +1,10 @@
+- Database server
+- DBMS
+- SQL IDE: Practise SQL query in SQL Editor/Database-SQL-IDE || Online Query Service.
+	- IDE: SQL Server Management Studio, DBeaver Community Edition, Adminer, HeidiSQL, Microsoft SQL Server Management Studio Express, MySQL Workbench, Oracle SQL Developer, RazorSQL, SQuirrel SQL, Toad for SQL Server, Valentina Studio
+	- Online Query Service: DB Fiddle, SQL Fiddle, Rextester
+- Database Schema
+	- Demo Database Design: There exist many sample demo Database-Schema(MySQL's Employees, DQL Server Adventure Work, Worldwide Importers, etc) to learn.
+	- Or create new Database-Schema from scratch.
+	- https://github.com/ami-levin/Animal_Shelter
+- 

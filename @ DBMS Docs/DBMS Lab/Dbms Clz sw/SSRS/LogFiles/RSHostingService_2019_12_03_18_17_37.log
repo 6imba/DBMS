@@ -1,0 +1,21 @@
+2019-12-03 18:17:37.8002|INFO|1|File Logger created: 'C:\Users\simba\Desktop\BiT\Software\SSRS\LogFiles\RSHostingService_${DailyDate}.log' - level Info, will roll at 32 Mb, process id 5008
+2019-12-03 18:17:37.8242|INFO|1|CFG : WebApiMaxWaitMS = [1000] (default)
+2019-12-03 18:17:37.8242|INFO|1|CFG : WebApiBackOffExpireSeconds = [60] (default)
+2019-12-03 18:17:37.8242|INFO|1|CFG : WebApiInitialWaitMS = [10] (default)
+2019-12-03 18:17:37.8242|INFO|1|CFG : WebApiBackoffMultiplier = [2] (default)
+2019-12-03 18:17:37.8242|INFO|1|CFG : ServiceWatchdogIntervalInSeconds = [10] (default)
+2019-12-03 18:17:37.8242|INFO|1|Current Directory : C:\Users\simba\Desktop\BiT\Software\SSRS\RSHostingService
+2019-12-03 18:17:39.0814|INFO|5|Updating application config files
+2019-12-03 18:17:39.0814|INFO|5|Syncing service machine key
+2019-12-03 18:17:39.2745|INFO|5|CFG : MaxWaitMinutes = [60] (default)
+2019-12-03 18:17:39.2745|INFO|5|CFG : BackOffExpireMinutes = [60] (default)
+2019-12-03 18:17:39.2745|INFO|5|CFG : InitialWaitSeconds = [30] (default)
+2019-12-03 18:17:39.2745|INFO|5|CFG : BackOffMultiplier = [2] (default)
+2019-12-03 18:17:39.3520|INFO|5|Launching Process : Management Service
+2019-12-03 18:17:39.3520|INFO|5|Starting Process: C:\Users\simba\Desktop\BiT\Software\SSRS\Management\RSManagement.exe
+2019-12-03 18:17:46.9636|INFO|11|Fetched ManagementState from Management state = DatabaseUnavailable, Encryption key present = False
+2019-12-03 18:17:47.1611|INFO|11|Launching Process : RS Service
+2019-12-03 18:17:47.1611|INFO|11|Starting Process: C:\Users\simba\Desktop\BiT\Software\SSRS\ReportServer\bin\ReportingServicesService.exe
+2019-12-03 18:17:47.4696|INFO|11|Launching Process : Portal
+2019-12-03 18:17:47.4696|INFO|11|Starting Process: C:\Users\simba\Desktop\BiT\Software\SSRS\Portal\RSPortal.exe
+2019-12-03 18:17:47.6597|INFO|5|Service watchdog: starting

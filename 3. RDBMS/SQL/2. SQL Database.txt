@@ -1,0 +1,16 @@
+# SQL Database:
+    - SQL Commands: CREATE DATABASE, DROP DATABASE, BACKUP DATABASE-TO DISK-WITH , CREATE TABLE, DROP TABLE, TRUNCATE TABLE, 
+                    ALTER TABLE-(ADD, DROP COLUMN, ALTER COLUMN, RENAME, RENAME COLUMN, ), CREATE VIEW, CREATE OR REPLACE VIEW, DROP VIEW,
+
+    - SQL Create Constraints: SQL constraints are used to specify rules for data in a table.
+            :NOT NULL, UNIQUE,CONSTRAINT-UNIQUE, DROP INDEX/CONSTRAINT, PRIMARY KEY, CONSTRAINT-PRIMARY KEY, DROP PRIMARY KEY,
+             FOREIGN KEY, FOREIGN KEY-REFERENCES, DROP FOREIGN KEY, DEFAULT, DROP DEFAULT, CHECK, CREATE INDEX, AUTO_INCREMENT,
+             CREATE SEQUENCE,
+            - You can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per table.
+            - UNIQUE constraints can be NULL but PRIMARY KEY constraint can never be null.
+
+    - SQL ALERT: Table_name, Column_name, Column_datatype, Column_constraints, Add new Colum, Drop_existing_Column
+
+    - SQL Data Types.
+    - SQL Injection.
+    - SQL Hosting Server.

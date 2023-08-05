@@ -1,0 +1,45 @@
+﻿{
+    "Config": 
+    {
+        "BI_SERVER": "false",
+        "managementUrl": "http://localhost:8082",
+        "rsConfigFilePath": "..\\ReportServer\\rsreportserver.config",
+        "SecureConnectionLevel": "0",
+    },
+    "ManagementProcess": {
+        "name": "Management Service",
+        "path": "Management\\RSManagement.exe",
+        "parameters": "",
+        "Config": {
+            "Logger.path": "..\\LogFiles\\",
+            "Dumper.path": "..\\LogFiles\\",
+            "Dumper.flags": "SendToWatson, AllThreads, AllMemory",
+            "Dumper.preventIfContains": "Microsoft.BIServer.HostingEnvironment.Exceptions.TrustedProcessTokenExpiredException",
+            "listenerUrl": "http://+:8082/",
+            "restartOnChangesTo": "Dumper.flags,Dumper.path,Dumper.preventIfContains,listenerUrl,Logger.path"
+        }
+    },
+    "ManagedProcesses": 
+    [
+        {
+            "name": "RS Service",
+            "path": "ReportServer\\bin\\ReportingServicesService.exe",
+            "aspSettingsFile": "ReportServer\\web.config",
+            "parameters": "/app",
+            "Config": 
+            {
+                "restartOnChangesTo": "Hosting-databaseValidationStatus,SecureConnectionLevel"
+            }
+        },
+        {
+            "name": "Portal",
+            "path": "Portal\\RSPortal.exe",
+            "aspSettingsFile": "Portal\\RSPortal.exe.config",
+            "parameters": "/app",
+            "Config": 
+            {
+                "restartOnChangesTo": "Hosting-databaseValidationStatus,EnableXsrfValidation,SecureConnectionLevel,AccessControlAllowOrigin,AccessControlAllowHeaders,AccessControlAllowMethods,AccessControlAllowCredentials,AccessControlMaxAge,AccessControlExposeHeaders"
+            }
+        }
+    ]
+}

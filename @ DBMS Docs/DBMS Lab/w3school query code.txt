@@ -1,0 +1,11 @@
+#DATABASE
+CREATE DATABASE databasename;                         //SQL statement to create a new database called #.
+SHOW DATABASES;                                       //check created  database in the list of databases
+DROP DATABASE databasename;                           //SQL statement to delete a database named #.
+BACKUP DATABASE databasaename			      //SQL statement used in SQL ServeR to create a full back up of an existing SQL database.
+TO DISK = 'filepatha';
+//E.G.
+BACKUP DATABASE testDB
+TO DISK = 'D:\backups\testDB.bak';
+//Differential backup vs. incremental backup
+

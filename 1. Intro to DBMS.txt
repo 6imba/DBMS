@@ -1,0 +1,107 @@
+Q. Introduction:
+	- Data
+	- Database
+	- Database Management System
+	- Structure Query Language
+	- Relation Database Management System
+
+	- Data is stored inside Database. & DBMS manages Data inside Database using SQL.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is Data?
+	> Data: Fact(height, name, etc) & Iamge|Vedio|Email|File|Contact|etc
+	- In simple words, data can be facts related to any object in consideration.
+	- For example, your name, age, height, weight, etc. are some data related to you.
+	- A picture, image, file, pdf, etc. can also be considered data.
+	- Data are randome.
+	> Useful relavent data or Not Useful irrelavent data.
+	> Any Facts related to any object/entity is data.
+	
+	# Information: Specific, Structured, Organized, Relavent and meaningful data.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is a Database?
+	- Base where relavent or irrelavent data is collected systematically.
+	- Database is a systematic/organized collection of data.
+	- A database is an organized collection of data typically stored electronically in a computer system.
+	- We conclude information by retiving structured/systematic/organized data from database.
+	- A database refers to logical representation of organized collection of data, typically stored electronically in computer harware system.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is a DBMS?
+	- A Database Management System (DBMS) is software designed to store, retrieve, define, and manage data in a database.
+	- A database management system (or DBMS) is essentially nothing more than a computerized data-keeping system.
+	- Examples of DBMS are File_Systems, Microsoft_Excel, RBDMS, NOSQLDBMS etc.
+	# How any DBMS place/store/scale data in DataBase defines its efficient(cost/space/time) & Selection for project.
+	# Security, Architecture of DBMS.
+	Q. How any DBMS store data in its DB?
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Types of DBMS & Language it uses:
+	- RDBMS & SQL
+	- Non-RDBMS & NoSQL
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is SQL?
+	- SQL stands for Structured Query Language which is basically a language used  to communicate(access and manipulate) with a relational_database.
+	- SQL can:
+		> execute queries against a database,
+		> retrieve data from a database,
+		> insert & update records in a database,
+		> delete records from a database,
+		> create new databases, tables, views, index,
+		> create procedures in a database,
+		> set permissions on tables, procedures, and views
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. RDBMS:
+	Q. What is a Relational Database?
+		- A relational database is a type of database that uses a structure that allows us to identify and access data in relation(table) to another piece of data in the database.
+		- Often, data in a relational database is organized into tables.
+
+	Q. What is a Relational Database Management System (RDBMS)?
+		- A relational database management system (RDBMS) is a program that allows you to create, update, and administer a relational database.
+
+	> Types of relationships in relational database:
+		* one to one - where a record of one table relates to a record in another table
+		* one to many - where a record of one table relates to multiple records in another table
+		* many to one - where multiples record of one table record relates to a record of another table.
+		* many to many - where multiple records of one table relates to multiple records of another table.
+
+	> Example of RDBMS are MySql, PostgreSQL, SqlServer, Oracle etc.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Comparision between DBMS and RDBMS:
+	- DBMS stores data as a file(either a hierarchical form or a navigational form.) whereas in RDBMS also, data is stored as a file but in the tabular form.
+	- DBMS supports single users, while RDBMS supports multiple users.
+	- DBMS does not support client-server architecture but RDBMS supports client-server architecture.
+
+	- Examples of DBMS are file systems, xml etc. 
+	- Example of RDBMS are mysql, postgre, sql server, oracle etc.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Popular Relational/SQL Databases: SQL
+	- Moicrosoft SQL Server,
+	- MySQL,
+	- PostgreSQL,
+	- MariaDB,
+	- SQLite,
+	- Db2
+
+# Popular Non-Relational/NoSQL Databases: NoSQL
+	- MongoDB
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Reference:
+	- https://www.guru99.com/introduction-to-database-sql.html
+	- https://www.nibusinessinfo.co.uk/content/types-database-system
+	- https://www.matillion.com/resources/blog/the-types-of-databases-with-examples

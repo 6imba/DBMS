@@ -1,0 +1,19 @@
+﻿Installing assembly 'C:\Users\simba\Desktop\BiT\Software\SSRS\RSHostingService\RSHostingService.exe'.
+Affected parameters are:
+   assemblypath = C:\Users\simba\Desktop\BiT\Software\SSRS\RSHostingService\RSHostingService.exe
+   servicename = SQLServerReportingServices
+   unattended = 
+   logtoconsole = true
+   productname = SQL Server Reporting Services
+   logfile = C:\Users\simba\Desktop\BiT\Software\SSRS\RSHostingService\RSHostingService.InstallLog
+Installing service SQLServerReportingServices...
+Service SQLServerReportingServices has been successfully installed.
+Creating EventLog source SQLServerReportingServices in log Application...
+Committing assembly 'C:\Users\simba\Desktop\BiT\Software\SSRS\RSHostingService\RSHostingService.exe'.
+Affected parameters are:
+   assemblypath = C:\Users\simba\Desktop\BiT\Software\SSRS\RSHostingService\RSHostingService.exe
+   servicename = SQLServerReportingServices
+   unattended = 
+   logtoconsole = true
+   productname = SQL Server Reporting Services
+   logfile = C:\Users\simba\Desktop\BiT\Software\SSRS\RSHostingService\RSHostingService.InstallLog

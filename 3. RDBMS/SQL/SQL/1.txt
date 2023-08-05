@@ -1,0 +1,24 @@
+- SQL is language used to interact with RDBMS.
+- RDBMS is a software apllication used to create and manage DB.
+- Database is an organized collection of structured information, or data, typically stored electronically in a computer system, in a standardized manner/structure either in tabular form or files etc.
+
+- Database => Tables => Records/Rows
+- Relation Between Tables inside Database.
+- Centralized DB and Distributed DB.
+- Relational DB and Non Relational DB.
+
+- Can we have relation between tables in different Databases?
+    -> No, beacause you can't have foreign keys between databases.
+
+- What makes relation between two tables?
+    -> In most cases, the relationship connects/maps the primary-key(unique-identifier) column for each row, from one table to a field in another table.
+
+- DBMS store data as a files where as RDBMS stores data in a tabular form.
+- RDBMS: mysql, postgre, sql server, oracle. (supports distributed database)
+- DBMS: xml, json (doesnt supports distributed database)
+
+- Design Database Schema.
+    - Schema is of three types: Logical Schema, Physical Schema and view Schema.
+
+- SQL: Relational DB, Table, Row, Column
+- NoSQL: Non Relational DB, Document(JSON, XML, etc), key-value

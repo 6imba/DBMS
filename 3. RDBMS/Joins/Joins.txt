@@ -1,0 +1,2 @@
+Q. Why do we have Left Join and Right Join in SQL, if we can use Left Join to get same result as of Right Join by just changing the position of tables?
+	==> https://www.youtube.com/watch?v=xHoXppyDuxs

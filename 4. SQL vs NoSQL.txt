@@ -1,0 +1,34 @@
+1. Relational Database:
+	- SQL is used by RDBMS to communicate with Relational-Databsae,
+	- Relational Database stores data in relational tables formate with row|column,
+	- SQL databases are vertically scalable
+	- Structure data
+	- tabular schema,
+	- tabular, relational databases.
+	- Example of RDBMS: MySql, Postgrels, Oracels
+	- new record added == new row added in table,
+	- relation can be made between two tables,
+	- Relational databases work best when the data they contain doesn’t change very often,
+
+2. NoSQL or Non-Relational Databases:
+	- SQL is used by RDBMS to communicate with Relational-Databsae,
+	- NoSQL databases stores data in collection(document) formate with flexible document(key: value),
+	- NoSQL databases are horizontally scalable,
+	- Unstructure data
+	- no Schema,
+	- collection(document), non-relational databases.
+	- Example of N-DBMS: MongoDB,
+	- new record added == new document added in collection,
+	-
+	- Non-relational databases are therefore ideal for storing data that may be changed frequently or for applications or for applications that handle many different kinds of data.
+
+> Non-relational databases often perform faster because a query doesn’t have to view several tables in order to deliver an answer, as relational datasets often do. 
+> When starting a project, it is worth considering relational vs non-relational databases, in terms of their differences, to get a better understanding of the right solution for the project.
+
+Q. What is scalable ind database?
+
+
+# Reference:
+	- https://www.mongodb.com/databases/non-relational
+	- https://www.youtube.com/watch?v=nigPkP6QeTk
+	- https://www.guru99.com/sql-vs-nosql.html

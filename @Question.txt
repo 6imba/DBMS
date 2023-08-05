@@ -1,0 +1,15 @@
+Q. Is there any other language besides SQL for relational databases?
+    - During the dawn of relational databases, two major players were in the market: Oracle and Ingres.
+    - Oracle based its database on SQL, an IBM invention.
+    - Ingres based its database on QUEL, a query language created at Berkeley Univerity.
+    -   When ANSI decided to pick a standard for database queries, they opted for SQL. And that’s how SQL because, well, the standard.
+    - Many people, though, consider QUEL a superior query language, compared to SQL, and some argue the only reason ANSI picked SQL was because it was IBM’s standards. Eventually, Ingres adopted SQL.
+    - But yes, once upon a time, there was QUEL.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+# DataStorage vs Database vs DataWarehouse vs DataLake.
+# Cloud Storage System: Goggle_Drive_15GB, Goggle_Drive, Microsoft_OneDrive_15GB, DropBox_2GB.
+	> data: text, image, image, email, etc.
+# Type of Data Storage & Its representation.
+	> 
